@@ -1,0 +1,141 @@
+*{margin: 0; padding: 0;}
+body{
+width: 360px;
+height: 640px;
+}
+:root{
+--main-color: #5081E9;
+--sub-color: #CBDBFF;
+--main-text-color: #353535;
+}
+/* 카테고리 */
+.category-select h1{
+display: flex;
+justify-content: center;
+margin-top: 180px;
+font-size: 2.3rem; 
+color: var(--main-text-color);
+}
+.category-select p{
+text-align: center;
+margin: 20px;
+font-size: 1.2rem;
+color: var(--main-text-color);
+}
+.category-select .category{
+width: 130px;
+height: 160px;
+background-color: #CBDBFF;
+outline: none;
+border: none;
+border-radius: 10px;
+margin: 10px;
+display: wrap; 
+justify-content: center;
+align-items: center;
+color: var(--main-color);
+font-size: 1.1rem;
+font-weight: bolder;
+}
+.category-select .category:nth-child(odd){
+margin-left: 40px;
+} 
+/* 퀴즈 */
+.quiz-page{
+  display: flex;
+  flex-direction: column;
+}
+.quiz-page p:nth-child(1){
+margin: 50px 0 0 40px;
+color: var(--main-color);
+font-weight: 400;
+}
+.quiz-page p:nth-child(2){
+margin: 25px 0 20px 40px;
+color: var(--main-text-color);
+font-size: 1.2rem;
+font-weight: 600;
+}
+.choices{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+.choices button{
+width: 290px;
+height: 60px;
+margin-top: 20px;
+border: 2px;
+border-radius: 17px;
+background-color: #fff;
+box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+font-size: 1rem;
+color: var(--main-text-color);
+}
+.choices button:hover{
+border: 20px;
+background-color: #fff;
+outline-color: 3px;
+box-shadow: 2px 2px 7px rgba(80,129,233,0.7);
+}
+.next{
+background-color: var(--main-color);
+width: 310px;
+height: 60px;
+border: none;
+border-radius: 17px;
+color: #fff;
+font-size: 1.2rem;
+font-weight: 500;
+position: absolute;
+bottom: 30px;
+left: 25px;
+}
+/* 결과 */
+.results{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.p1{
+position: absolute;
+top: 100px;
+color: var(--main-color);
+font-size: 1.7rem;
+font-weight: 500;
+}
+.p2{
+position: absolute;
+bottom: 250px;
+color: var(--main-text-color);
+font-size: 1.2rem;
+font-weight: 500;
+}
+.results >.btn1{
+width: 310px;
+height: 60px;
+border: none;
+border-radius: 17px;
+background-color: var(--sub-color);
+color: var(--main-text-color);
+font-size: 1.2rem;
+font-weight: 500;
+position: absolute;
+bottom: 100px;
+}
+.results >.btn2{
+width: 310px;
+height: 60px;
+border: none;
+border-radius: 17px;
+background-color: var(--main-color);
+color: #fff;
+font-size: 1.2rem;
+font-weight: 500;
+position: absolute;
+bottom: 30px;
+}
