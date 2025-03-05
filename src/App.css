@@ -1,15 +1,17 @@
 *{margin: 0; padding: 0;}
-body{
-width: 360px;
-height: 640px;
+
+html{
+  width: 432px;
+  height: 768px;
 }
 :root{
 --main-color: #5081E9;
 --sub-color: #CBDBFF;
 --main-text-color: #353535;
 }
+
 /* 카테고리 */
-.category-select h1{
+.category-select > h1{
 display: flex;
 justify-content: center;
 margin-top: 180px;
@@ -40,6 +42,7 @@ font-weight: bolder;
 .category-select .category:nth-child(odd){
 margin-left: 40px;
 } 
+
 /* 퀴즈 */
 .quiz-page{
   display: flex;
@@ -91,8 +94,10 @@ font-size: 1.2rem;
 font-weight: 500;
 position: absolute;
 bottom: 30px;
-left: 25px;
+left: 60px;
+/* transform: translateX(-50%); */
 }
+
 /* 결과 */
 .results{
 display: flex;
